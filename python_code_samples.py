@@ -51,13 +51,13 @@ phonebook = {
 # Accessing dictionary values
 print(phonebook["Alice"])
 
-# 7. File Handling: Writing and reading a file
-with open("example.txt", "w") as file:
-    file.write("This is an example text.")
 
-with open("example.txt", "r") as file:
-    content = file.read()
-    print(content)
+# 7. Celsius to Fahrenheit conversion
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+print(celsius_to_fahrenheit(25))  # Output: 77.0
+
 
 # 8. Random Number Generation
 import random
