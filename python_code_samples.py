@@ -1,3 +1,5 @@
+#Randomly generated python code samples 
+
 # 1. Basic Arithmetic Operations
 a = 10
 b = 5
