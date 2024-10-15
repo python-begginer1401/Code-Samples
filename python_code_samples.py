@@ -77,10 +77,20 @@ class Dog:
 my_dog = Dog("Rex", "German Shepherd")
 my_dog.bark()  # Output: Rex is barking!
 
-# 10. Exception Handling
-try:
-    result = 10 / 0
-except ZeroDivisionError:
-    print("Cannot divide by zero!")
-finally:
-    print("This will always execute.")
+# 10. Basic Calculator
+def calculator(a, b, operation):
+    if operation == "add":
+        return a + b
+    elif operation == "subtract":
+        return a - b
+    elif operation == "multiply":
+        return a * b
+    elif operation == "divide":
+        if b != 0:
+            return a / b
+        else:
+            return "Cannot divide by zero!"
+    else:
+        return "Invalid operation!"
+
+print(calculator(10, 5, "add"))  # Output: 15
